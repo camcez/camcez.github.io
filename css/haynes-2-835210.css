@@ -33,14 +33,18 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #fbfbfb;
-  background-image: url('../images/haynes-neurosurgical-group-birmingham-alabama-logo.png');
-  background-position: 49% 50%;
-  background-size: 168px;
-  background-repeat: no-repeat;
   text-align: center;
 }
 
 .navmenu1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #b0bdb6;
 }
 
@@ -869,10 +873,17 @@ a {
 }
 
 .header_dropdown {
+  margin-top: 3px;
   border-radius: 0px 0px 8px 8px;
   background-color: #fbfbfb;
   font-family: Verdana, Geneva, sans-serif;
   color: #1d1d1d;
+}
+
+.header_dropdown.w--open {
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  border-left: 1px solid #ededed;
 }
 
 .header_dd_item {
@@ -1089,10 +1100,24 @@ a {
   align-self: center;
 }
 
+.header_link_logo {
+  border: 1px solid #fbfbfb;
+}
+
+.header_link_logo:active {
+  border-color: #1d1d1d;
+}
+
+.header_link_logo:focus {
+  border-color: #1d1d1d;
+}
+
 @media (max-width: 991px) {
   .headerbar {
     display: block;
+    width: 100%;
     margin-right: 0px;
+    margin-left: 0px;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -1116,11 +1141,105 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
   }
+  .navmenu1 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .nav_link.menu_link {
+    max-width: 100%;
+    min-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+  }
+  .nav_link.menu_link:hover {
+    border-top-color: #c8c8c8;
+    border-bottom-color: #c8c8c8;
+  }
+  .nav_link.menu_link:active {
+    border-top-color: #1d1d1d;
+    border-bottom-color: #1d1d1d;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+  .nav_link.menu_link:focus {
+    border-top-style: solid;
+    border-top-color: #1d1d1d;
+    border-bottom-color: #1d1d1d;
+  }
   .navmenu_collapsed {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     text-align: center;
+  }
+  .header_dropdown.w--open {
+    border: 1px none #000;
+    background-color: #c8c8c8;
+  }
+  .header_dd_item {
+    border-top-style: solid;
+    border-top-color: #c8c8c8;
+    border-bottom-style: solid;
+    border-bottom-color: #c8c8c8;
+  }
+  .header_dd_item:hover {
+    border-top-style: solid;
+    border-bottom-style: solid;
+  }
+  .header_dd_item:active {
+    border-top-style: solid;
+    border-bottom-style: solid;
+  }
+  .header_dd_item:focus {
+    border-top-style: solid;
+    border-bottom-style: solid;
+  }
+  .header_dd_item.header_dd_bottom {
+    border-bottom-style: solid;
+  }
+  .header_dd_item.header_dd_bottom.header_dd_midbot:active {
+    border-bottom-style: solid;
+  }
+  .header_dd_item.header_dd_bottom.header_dd_midbot:focus {
+    border-bottom-style: solid;
+  }
+  .menu_image_tablet {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  .menu_dd_panel {
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #c8c8c8;
+  }
+  .menu_dd_panel.menu_link {
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+  }
+  .menu_dd_panel.menu_link:active {
+    border-top-style: solid;
+    border-top-color: #c8c8c8;
+    border-bottom-style: solid;
+    border-bottom-color: #c8c8c8;
+  }
+  .menu_dd_panel.menu_link:focus {
+    border-top-color: #c8c8c8;
+    border-bottom-color: #c8c8c8;
   }
 }
 
