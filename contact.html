@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Mon Oct 03 2016 19:46:30 GMT+0000 (UTC)  -->
+<!--  Last Published: Tue Oct 25 2016 21:33:30 GMT+0000 (UTC)  -->
 <html data-wf-page="57f008905acc0a513c8b8185" data-wf-site="57e84a1a85a476a775f37527">
 <head>
   <meta charset="utf-8">
@@ -12,20 +12,49 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
   <link href="css/haynes-2-835210.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Vollkorn:400,400italic,700,700italic"]
+      }
+    });
+  </script>
   <script src="js/modernizr.js" type="text/javascript"></script>
-  <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+  <link href="images/Haynes_Icon.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/Haynes_WebClip.jpg" rel="apple-touch-icon">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body class="body">
   <div class="header">
-    <div class="nsvfront w-nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400">
+    <div class="navfront w-nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400">
+      <a class="menu_image_tablet_link w-inline-block" href="index.html">
+        <img class="menu_image_tablet w-hidden-main" src="images/haynes-neurosurgical-group-birmingham-alabama-logo.png" width="131">
+      </a>
+      <div class="nav_links">
+        <a class="nav_aprima_link w-inline-block" href="https://portal.aprima.com/11/login.aspx?UID=04acabcc-0e96-486d-919b-134cf30a153c" id="Aprima-Patient-Login" target="_blank">
+          <div class="nav_aprima"><strong>Patient Portal</strong>
+          </div>
+          <div class="nav_aprima_sub">Current Patients</div>
+        </a>
+      </div>
       <nav class="headerbar w-container">
         <nav class="navmenu1 w-nav-menu" role="navigation">
-          <a class="menu_link nav_link w-nav-link" href="index.html">Home</a>
-          <a class="menu_link nav_link w-nav-link" href="practice.html">Practice</a>
           <div class="menu_dd_panel menu_link w-dropdown" data-delay="0">
             <div class="menu_link nav_link w-dropdown-toggle">
-              <div class="doc-dropdown">Doctors</div>
+              <div>Practice</div>
+              <div class="w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="header_dropdown w-dropdown-list">
+              <a class="header_dd_item w-dropdown-link" href="practice.html">History</a>
+              <a class="header_dd_item w-dropdown-link" href="testimonials.html">Testimonials</a>
+              <a class="header_dd_item w-dropdown-link" href="links.html">Links</a>
+              <a class="header_dd_bottom header_dd_item header_dd_midbot w-dropdown-link" href="faq.html">F.A.Q.</a>
+            </nav>
+          </div>
+          <div class="menu_dd_panel menu_link w-dropdown" data-delay="0">
+            <div class="menu_link nav_link w-dropdown-toggle">
+              <div>Surgeons</div>
               <div class="w-icon-dropdown-toggle"></div>
             </div>
             <nav class="header_dropdown w-dropdown-list">
@@ -35,7 +64,7 @@
             </nav>
           </div>
           <a class="header_link_logo w-inline-block" href="index.html">
-            <img class="w-hidden-medium w-hidden-small w-hidden-tiny" src="images/haynes-neurosurgical-group-birmingham-alabama-logo.png" width="141">
+            <img alt="Haynes Neurosurgical Group" class="w-hidden-medium w-hidden-small w-hidden-tiny" src="images/haynes-neurosurgical-group-birmingham-alabama-logo.png" width="168">
           </a>
           <div class="menu_dd_panel menu_link w-dropdown" data-delay="0">
             <div class="menu_link nav_link w-dropdown-toggle">
@@ -50,17 +79,15 @@
               <a class="header_dd_bottom header_dd_item header_dd_midbot w-dropdown-link" href="workers-compensation.html">Worker's Compensation</a>
             </nav>
           </div>
-          <a class="menu_link nav_link w-nav-link" href="contact.html">Contact</a>
           <div class="menu_dd_panel menu_link w-dropdown" data-delay="0">
             <div class="menu_link nav_link w-dropdown-toggle">
-              <div>Misc.</div>
+              <div>Contact</div>
               <div class="w-icon-dropdown-toggle"></div>
             </div>
             <nav class="header_dropdown w-dropdown-list">
-              <a class="header_dd_item w-dropdown-link" href="testimonials.html">Testimonials</a>
-              <a class="header_dd_item w-dropdown-link" href="referring-physicians.html">Referring Physicians</a>
-              <a class="header_dd_item w-dropdown-link" href="links.html">Links</a>
-              <a class="header_dd_bottom header_dd_item w-dropdown-link" href="faq.html">FAQs</a>
+              <a class="header_dd_item w-dropdown-link" href="contact.html">Office</a>
+              <a class="header_dd_item w-dropdown-link" href="locations.html">Location</a>
+              <a class="header_dd_bottom header_dd_item w-dropdown-link" href="referring-physicians.html">Referring Physicians</a>
             </nav>
           </div>
         </nav>
@@ -68,9 +95,20 @@
           <div class="w-icon-nav-menu"></div>
         </div>
       </nav>
-      <a class="menu_image_tablet_link w-inline-block" href="index.html">
-        <img class="menu_image_tablet w-hidden-main" src="images/haynes-neurosurgical-group-birmingham-alabama-logo.png" width="131">
-      </a>
+      <div class="nav_row w-row">
+        <div class="nav_col_1 w-col w-col-5">
+          <div class="nav_hours w-richtext">
+            <p>M-Th: 8-4:30
+              <br>F: 8-12</p>
+          </div>
+        </div>
+        <div class="nav_col_2 w-col w-col-7">
+          <div class="nav_contact w-richtext">
+            <p>P: (205)787-8676
+              <br>F: (205)785-7944</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="page_content_sec">
@@ -82,30 +120,28 @@
         </svg>
       </div>
       <div class="page_content_text w-richtext">
-        <p>Our staff is happy to answer your questions, schedule appointments, and assist you with other needs.</p>
-        <p>Princeton Baptist Medical Center</p>
-        <ul>
-          <li>‍Main: <a href="tel:1-205-787-8676">(205)787-8676</a>
-          </li>
-          <li>Fax: <a href="tel:1-205-785-7944">(205)785-7944</a>
-          </li>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-0">Our staff is happy to answer your questions, schedule appointments, and assist you with other needs.</p>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-1">Princeton Baptist Medical Center</p>
+        <ul data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-2">
+          <li data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-2-0">‍Main: (205)787-8676</li>
+          <li data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-2-1">Fax: (205)785-7944</li>
         </ul>
-        <p>Office hours:</p>
-        <ul>
-          <li>Monday – Thursday: 8:00 am-4:30 pm</li>
-          <li>Friday: 8:00 am -12:00pm.</li>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-3">Office hours:</p>
+        <ul data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-4">
+          <li data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-4-0">Monday – Thursday: 8:00 am-4:30 pm</li>
+          <li data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-4-1">Friday: 8:00 am -12:00pm.</li>
         </ul>
-        <p><strong>After Hours/Emergencies</strong>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-5"><strong data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-5-0">After Hours/Emergencies</strong>
         </p>
-        <p>A physician is always on call and available to help you with urgent and emergency problems. After office hours, holidays, and weekends, you may call our office at <a href="tel:1-205-787-8676">(205) 787-8676</a>, and our answering service will alert the doctor on call<em>.&nbsp;</em>&nbsp;Prescription and non-urgent problems should be handled during routine business hours.</p>
-        <p><strong>Making Appointments</strong>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-6">A physician is always on call and available to help you with urgent and emergency problems. After office hours, holidays, and weekends, you may call our office at (205) 787-8676, and our answering service will alert the doctor on call<em data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-6-0">.&nbsp;</em>&nbsp;Prescription and non-urgent problems should be handled during routine business hours.</p>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-7"><strong data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-7-0">Making Appointments</strong>
         </p>
-        <p>Appointments are scheduled for Mondays, Tuesdays, and Wednesdays at Princeton Baptist Medical Center during regular office hours.&nbsp; For your convenience, Dr. Cezayirli also sees patients at UAB Medical Center West on Monday mornings. To make an appointment with a physician, please call our office staff at <a href="tel:1-205-787-8676">(205) 787-8676</a> during regular office hours.</p>
-        <p><strong>Staff</strong>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-8">Appointments are scheduled for Mondays, Tuesdays, and Wednesdays at Princeton Baptist Medical Center during regular office hours.&nbsp; For your convenience, Dr. Cezayirli also sees patients at UAB Medical Center West on Monday mornings. To make an appointment with a physician, please call our office staff at (205) 787-8676 during regular office hours.</p>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-9"><strong data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-9-0">Staff</strong>
         </p>
-        <p>The Office Staff at Haynes Neurosurgical Group is here during regular office hours to assist you with your medical needs and inquiries. They also facilitate scheduling tests, surgery, and other procedures; acquire necessary pre-authorizations; complete employer paperwork; and file insurance claims.</p>
-        <p>In order to reach a member of our staff, simply call the office at&nbsp;<a href="tel:1-205-787-8676">(205) 787-8676</a> and your call will be transferred to the appropriate person.</p>
-        <h3><a href="locations.html">Locations</a></h3>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-10">The Office Staff at Haynes Neurosurgical Group is here during regular office hours to assist you with your medical needs and inquiries. They also facilitate scheduling tests, surgery, and other procedures; acquire necessary pre-authorizations; complete employer paperwork; and file insurance claims.</p>
+        <p data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-11">In order to reach a member of our staff, simply call the office at&nbsp;(205) 787-8676 and your call will be transferred to the appropriate person.</p>
+        <h3 data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-12"><a data-w-id="b1a0a5ca-801f-294f-641a-e68f80364871-transient-12-0" href="locations.html">Locations</a></h3>
       </div>
     </div>
   </div>
